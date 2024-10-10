@@ -1,5 +1,24 @@
 # Tutorial: Configuración de Servidor DHCP en Debian y Clientes DHCP en Windows y Ubuntu
 
+# Índice:
+1. [Introducción](#introducción)
+2. [Preparación del Entorno](#preparación-del-entorno)
+   - [Crear las máquinas virtuales](#crear-las-máquinas-virtuales)
+   - [Configurar el router pfSense](#configurar-el-router-pfsense)
+3. [Ejercicio 1: Configuración del Servidor DHCP en Debian](#ejercicio-1-configuración-del-servidor-dhcp-en-debian)
+   - [Instalación del Servidor DHCP en Debian](#instalación-del-servidor-dhcp-en-debian)
+   - [Configuraciones adicionales](#configuraciones-adicionales)
+   - [Reiniciar el servicio y verificar que está activo](#reiniciar-el-servicio-y-verificar-que-está-activo)
+4. [Ejercicio 2: Configuración de los Clientes DHCP](#ejercicio-2-configuración-de-los-clientes-dhcp)
+   - [Configuración de los clientes DHCP](#configuración-de-los-clientes-dhcp)
+   - [Verificar las IPs asignadas](#verificar-las-ips-asignadas)
+   - [Verificar los parámetros en los clientes](#verificar-los-parámetros-en-los-clientes)
+   - [Verificar conectividad](#verificar-conectividad)
+5. [Ejercicio 3: Funcionamiento del Servidor DHCP](#ejercicio-3-funcionamiento-del-servidor-dhcp)
+   - [Ver la actividad del servidor con journalctl](#ver-la-actividad-del-servidor-con-journalctl)
+   - [Aplicar un filtro para ver solo los logs de un intervalo específico](#aplicar-un-filtro-para-ver-solo-los-logs-de-un-intervalo-específico)
+6. [Conclusión](#conclusión)
+
 ## Introducción
 Este tutorial cubre la instalación y configuración de un servidor DHCP en Debian y la configuración de dos clientes DHCP (uno con Windows y otro con Ubuntu) en una red privada. Se detallan los pasos para configurar el servidor DHCP, los clientes, y las pruebas necesarias para verificar la correcta asignación de las direcciones IP y otros parámetros.
 
